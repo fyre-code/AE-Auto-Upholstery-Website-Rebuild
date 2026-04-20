@@ -1,0 +1,21 @@
+/* ============================================================
+   A & E Auto Upholstery — Animations
+   Rule: BACKGROUND animations only. No text animations.
+   ============================================================ */
+
+/* ── Hero Background Animation ── */
+@keyframes heroScale {
+  from { transform: scale(1.06); }
+  to   { transform: scale(1.00); }
+}
+
+.hero-bg {
+  animation: heroScale 8s ease-out forwards;
+}
+
+/* ── Reduce motion: disable all animations ── */
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg {
+    animation: none;
+  }
+}

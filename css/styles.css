@@ -648,7 +648,7 @@ p:last-child { margin-bottom: 0; }
   padding-block: var(--space-16);
 }
 .footer-logo img { height: 72px; width: auto; margin-bottom: var(--space-4); }
-.footer-tagline { font-size: 0.85rem; color: var(--color-white-muted); margin: 0; }
+.footer-tagline { font-size: 0.85rem; color: var(--color-red); margin: 0; }
 
 .footer-heading {
   font-family: var(--font-heading);
@@ -656,15 +656,15 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-gold);
+  color: var(--color-red);
   margin-bottom: var(--space-4);
 }
 .footer-contact p {
   font-size: 0.9rem;
-  color: var(--color-white-muted);
+  color: var(--color-red);
   margin-bottom: var(--space-2);
 }
-.footer-contact a { color: var(--color-white-muted); transition: color var(--transition); }
+.footer-contact a { color: var(--color-red); transition: color var(--transition); }
 .footer-contact a:hover { color: var(--color-gold); }
 
 .social-list { display: flex; flex-direction: column; gap: var(--space-3); }
@@ -675,7 +675,7 @@ p:last-child { margin-bottom: 0; }
   font-family: var(--font-heading);
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--color-white-muted);
+  color: var(--color-red);
   transition: color var(--transition);
 }
 .social-link:hover { color: var(--color-gold); }
@@ -698,23 +698,23 @@ p:last-child { margin-bottom: 0; }
   align-items: center;
   gap: var(--space-4);
   font-size: 0.8rem;
-  color: var(--color-white-muted);
+  color: var(--color-red);
 }
-.footer-legal a { transition: color var(--transition); }
+.footer-legal a { color: var(--color-red); transition: color var(--transition); }
 .footer-legal a:hover { color: var(--color-gold); }
 .footer-legal span { color: var(--color-gold-muted); }
 .footer-copyright {
   font-size: 0.8rem;
-  color: var(--color-white-muted);
+  color: var(--color-red);
   margin: 0;
 }
 .footer-powered {
   font-size: 0.8rem;
-  color: var(--color-white-muted);
+  color: var(--color-red);
   margin: 0;
 }
-.footer-powered a { color: var(--color-gold); transition: color var(--transition); }
-.footer-powered a:hover { color: var(--color-white); }
+.footer-powered a { color: var(--color-red); transition: color var(--transition); }
+.footer-powered a:hover { color: var(--color-gold); }
 
 /* ── LEGAL PAGES ── */
 .legal-content {

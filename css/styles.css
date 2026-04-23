@@ -406,6 +406,7 @@ p:last-child { margin-bottom: 0; }
 }
 .card h3 { color: var(--color-white); margin-bottom: var(--space-2); }
 .card p  { font-size: 0.9rem; color: var(--color-white-muted); margin: 0; }
+.why-choose-section .card h3 { text-align: center; }
 
 /* ── WHY CHOOSE SECTION ── */
 .why-choose-section {

@@ -833,6 +833,10 @@ p:last-child { margin-bottom: 0; }
   flex-shrink: 0;
 }
 
+/* ── UPHOLSTERY PATTERN BACKGROUND SECTIONS ── */
+.section--upholstery-bg .section-heading { color: var(--color-gold); }
+.section--upholstery-bg p { color: var(--color-red); }
+
 /* ── CONTENT + IMAGE GRID (service pages) ── */
 .content-image-grid {
   display: grid;

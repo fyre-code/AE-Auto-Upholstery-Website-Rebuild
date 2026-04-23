@@ -322,10 +322,9 @@ p:last-child { margin-bottom: 0; }
   position: relative;
   z-index: 1;
   padding-block: var(--space-10);
-  max-width: var(--max-width-text);
+  max-width: 620px;
   text-align: center;
   margin-inline: auto;
-  padding-inline: var(--space-10);
 }
 .hero-eyebrow {
   font-family: var(--font-heading);
@@ -345,10 +344,10 @@ p:last-child { margin-bottom: 0; }
 }
 .hero-heading span { color: inherit; }
 .hero-sub {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: var(--color-white-muted);
   margin-bottom: var(--space-8);
-  max-width: 580px;
+  max-width: 100%;
   line-height: 1.7;
   margin-inline: auto;
 }

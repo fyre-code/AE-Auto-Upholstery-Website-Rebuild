@@ -87,4 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ── 6. Chat Widget — show after 3-second delay ── */
+  const chatWidget = document.getElementById('chat-widget');
+  if (chatWidget) {
+    setTimeout(() => chatWidget.classList.add('is-visible'), 3000);
+  }
+
 });

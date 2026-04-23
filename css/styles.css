@@ -312,8 +312,8 @@ p:last-child { margin-bottom: 0; }
 .hero--about                 { background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/aee7c2b2-a574-4e23-a4b1-32928356d9b5/0f7f7712-5ad1-4392-bbf8-7cf41634cb5a/1776951778312_american-flag-background.png'); background-color: #12161f; background-size: cover; background-position: center; background-attachment: fixed; overflow: visible; }
 .hero--about .hero-bg        { display: none; }
 .hero--about .hero-overlay   { display: none; }
-.hero--about .hero-sub       { max-width: 100%; margin-bottom: 0; color: var(--color-gold); text-shadow: 0 2px 6px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8); }
-.hero--about .hero-heading   { margin-bottom: 0; color: var(--color-red); text-shadow: 0 2px 8px rgba(0,0,0,0.95), 0 0 30px rgba(0,0,0,0.9); }
+.hero--about .hero-sub       { max-width: 100%; margin-bottom: 0; color: var(--color-gold); text-shadow: 0 0 4px #000, 0 0 8px #000, 0 0 14px #000, 2px 2px 3px #000, -2px -2px 3px #000, 2px -2px 3px #000, -2px 2px 3px #000; }
+.hero--about .hero-heading   { margin-bottom: 0; color: var(--color-red); text-shadow: 0 0 4px #000, 0 0 10px #000, 0 0 18px #000, 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000; }
 .hero--auto-rv .hero-bg      { background: linear-gradient(135deg, #0f1218 0%, #1a2232 50%, #221a10 100%); }
 .hero--boat .hero-bg         { background: linear-gradient(135deg, #0a1520 0%, #0f2030 50%, #1a2838 100%); }
 .hero--classic-car .hero-bg  { background: linear-gradient(135deg, #150f0a 0%, #25180e 50%, #1a1520 100%); }

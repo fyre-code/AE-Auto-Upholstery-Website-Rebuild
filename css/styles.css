@@ -315,11 +315,31 @@ p:last-child { margin-bottom: 0; }
 }
 /* Gradient backgrounds per page (placeholders until real images) */
 .hero--home .hero-bg         { background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/aee7c2b2-a574-4e23-a4b1-32928356d9b5/0f7f7712-5ad1-4392-bbf8-7cf41634cb5a/1776951779445_home-hero-background.png'); background-color: #0e0f14; background-size: cover; background-position: center; }
-.hero--about                 { background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/aee7c2b2-a574-4e23-a4b1-32928356d9b5/0f7f7712-5ad1-4392-bbf8-7cf41634cb5a/1776951778312_american-flag-background.png'); background-color: #12161f; background-size: cover; background-position: center; background-attachment: fixed; overflow: visible; }
-.hero--about .hero-bg        { display: none; }
-.hero--about .hero-overlay   { display: none; }
-.hero--about .hero-sub       { max-width: 100%; margin-bottom: 0; color: var(--color-gold); }
-.hero--about .hero-heading   { margin-bottom: 0; color: var(--color-red); text-shadow: 0 0 4px #000, 0 0 10px #000, 0 0 18px #000, 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000; }
+.hero--about,
+.hero--auto-rv,
+.hero--boat,
+.hero--classic-car,
+.hero--motorcycle            { background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/aee7c2b2-a574-4e23-a4b1-32928356d9b5/0f7f7712-5ad1-4392-bbf8-7cf41634cb5a/1776951778312_american-flag-background.png'); background-color: #12161f; background-size: cover; background-position: center; background-attachment: fixed; overflow: visible; }
+.hero--about .hero-bg,
+.hero--auto-rv .hero-bg,
+.hero--boat .hero-bg,
+.hero--classic-car .hero-bg,
+.hero--motorcycle .hero-bg   { display: none; }
+.hero--about .hero-overlay,
+.hero--auto-rv .hero-overlay,
+.hero--boat .hero-overlay,
+.hero--classic-car .hero-overlay,
+.hero--motorcycle .hero-overlay { display: none; }
+.hero--about .hero-sub,
+.hero--auto-rv .hero-sub,
+.hero--boat .hero-sub,
+.hero--classic-car .hero-sub,
+.hero--motorcycle .hero-sub  { max-width: 100%; margin-bottom: 0; color: var(--color-gold); }
+.hero--about .hero-heading,
+.hero--auto-rv .hero-heading,
+.hero--boat .hero-heading,
+.hero--classic-car .hero-heading,
+.hero--motorcycle .hero-heading { margin-bottom: 0; color: var(--color-red); text-shadow: 0 0 4px #000, 0 0 10px #000, 0 0 18px #000, 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000; }
 .about-text-backdrop         { background: rgba(0, 0, 0, 0.72); border-radius: var(--radius-md); padding: var(--space-6) var(--space-8); }
 .hero--auto-rv .hero-bg      { background: linear-gradient(135deg, #0f1218 0%, #1a2232 50%, #221a10 100%); }
 .hero--boat .hero-bg         { background: linear-gradient(135deg, #0a1520 0%, #0f2030 50%, #1a2838 100%); }

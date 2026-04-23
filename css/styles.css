@@ -308,7 +308,7 @@ p:last-child { margin-bottom: 0; }
   will-change: transform;
 }
 /* Gradient backgrounds per page (placeholders until real images) */
-.hero--home .hero-bg         { background: linear-gradient(135deg, #0e0f14 0%, #1e2438 50%, #2a1810 100%); }
+.hero--home .hero-bg         { background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/aee7c2b2-a574-4e23-a4b1-32928356d9b5/0f7f7712-5ad1-4392-bbf8-7cf41634cb5a/1776951779445_home-hero-background.png'); background-color: #0e0f14; background-size: cover; background-position: center; }
 .hero--about .hero-bg        { background: linear-gradient(135deg, #12161f 0%, #1a2030 100%); }
 .hero--auto-rv .hero-bg      { background: linear-gradient(135deg, #0f1218 0%, #1a2232 50%, #221a10 100%); }
 .hero--boat .hero-bg         { background: linear-gradient(135deg, #0a1520 0%, #0f2030 50%, #1a2838 100%); }
@@ -409,7 +409,10 @@ p:last-child { margin-bottom: 0; }
 
 /* ── WARRANTY BANNER ── */
 .warranty-banner {
-  background: var(--color-red);
+  background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/aee7c2b2-a574-4e23-a4b1-32928356d9b5/0f7f7712-5ad1-4392-bbf8-7cf41634cb5a/1776951780378_one-year-warranty-background.png');
+  background-color: var(--color-red);
+  background-size: cover;
+  background-position: center;
   padding-block: var(--space-12);
   text-align: center;
 }

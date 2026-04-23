@@ -522,7 +522,8 @@ p:last-child { margin-bottom: 0; }
   flex: 0 0 100%;
   padding: 0 var(--space-2);
 }
-.carousel-slide img {
+.carousel-slide img,
+.rv-single-img {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;

@@ -121,7 +121,7 @@ function initLightbox() {
   lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
 
-  document.querySelectorAll('.carousel-slide img').forEach((img) => {
+  document.querySelectorAll('.carousel-slide img, .rv-single-img').forEach((img) => {
     img.addEventListener('click', () => open(img.src, img.alt));
   });
 }

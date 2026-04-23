@@ -407,6 +407,15 @@ p:last-child { margin-bottom: 0; }
 .card h3 { color: var(--color-white); margin-bottom: var(--space-2); }
 .card p  { font-size: 0.9rem; color: var(--color-white-muted); margin: 0; }
 
+/* ── WHY CHOOSE SECTION ── */
+.why-choose-section {
+  background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/aee7c2b2-a574-4e23-a4b1-32928356d9b5/0f7f7712-5ad1-4392-bbf8-7cf41634cb5a/1776951778312_american-flag-background.png');
+  background-color: var(--color-dark);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* ── WARRANTY BANNER ── */
 .warranty-banner {
   background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/aee7c2b2-a574-4e23-a4b1-32928356d9b5/0f7f7712-5ad1-4392-bbf8-7cf41634cb5a/1776951780378_one-year-warranty-background.png');

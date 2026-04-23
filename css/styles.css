@@ -355,8 +355,10 @@ p:last-child { margin-bottom: 0; }
 .hero-buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   gap: var(--space-4);
+  width: 260px;
+  margin-inline: auto;
 }
 
 /* Page Header (non-hero pages: about, contact) */
@@ -503,8 +505,10 @@ p:last-child { margin-bottom: 0; }
   gap: var(--space-4);
   width: 260px;
 }
-.cta-buttons .btn { justify-content: center; }
-.cta-buttons .btn--phone { width: 100%; }
+.cta-buttons .btn,
+.hero-buttons .btn { justify-content: center; }
+.cta-buttons .btn--phone,
+.hero-buttons .btn--phone { width: 100%; }
 
 /* ── GALLERY CAROUSELS ── */
 .carousel-section { padding-block: var(--space-16); }
@@ -844,6 +848,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 @media (max-width: 639px) {
+  .hero-buttons { width: 100%; max-width: 320px; }
   .hero-buttons .btn { text-align: center; }
 }
 

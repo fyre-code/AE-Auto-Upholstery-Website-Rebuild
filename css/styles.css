@@ -314,7 +314,7 @@ p:last-child { margin-bottom: 0; }
 .hero--about .hero-overlay   { display: none; }
 .hero--about .hero-sub       { max-width: 100%; margin-bottom: 0; color: var(--color-gold); }
 .hero--about .hero-heading   { margin-bottom: 0; color: var(--color-red); }
-.hero--about .hero-content   { background: rgba(0, 0, 0, 0.55); border-radius: var(--radius-md); padding: var(--space-8); }
+.about-text-backdrop         { background: rgba(0, 0, 0, 0.72); border-radius: var(--radius-md); padding: var(--space-6) var(--space-8); }
 .hero--auto-rv .hero-bg      { background: linear-gradient(135deg, #0f1218 0%, #1a2232 50%, #221a10 100%); }
 .hero--boat .hero-bg         { background: linear-gradient(135deg, #0a1520 0%, #0f2030 50%, #1a2838 100%); }
 .hero--classic-car .hero-bg  { background: linear-gradient(135deg, #150f0a 0%, #25180e 50%, #1a1520 100%); }

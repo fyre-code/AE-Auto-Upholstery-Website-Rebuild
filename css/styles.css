@@ -322,7 +322,8 @@ p:last-child { margin-bottom: 0; }
   position: relative;
   z-index: 1;
   padding-block: var(--space-10);
-  max-width: 620px;
+  max-width: var(--max-width);
+  width: 100%;
   text-align: center;
   margin-inline: auto;
 }
@@ -347,7 +348,7 @@ p:last-child { margin-bottom: 0; }
   font-size: 1.05rem;
   color: var(--color-white-muted);
   margin-bottom: var(--space-8);
-  max-width: 100%;
+  max-width: 700px;
   line-height: 1.7;
   margin-inline: auto;
 }

@@ -250,6 +250,11 @@ p:last-child { margin-bottom: 0; }
   z-index: 200;
 }
 .dropdown-menu.is-open { display: block; }
+@media (min-width: 1024px) {
+  .nav-dropdown:hover .dropdown-menu { display: block; }
+  .nav-dropdown:hover .nav-dropdown-toggle { color: var(--color-gold); }
+  .nav-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
+}
 .dropdown-link {
   display: block;
   font-family: var(--font-heading);

@@ -13,9 +13,23 @@
   animation: heroScale 8s ease-out forwards;
 }
 
+/* ── CTA Button Bounce ── */
+@keyframes btnBounce {
+  0%, 55%, 100% { transform: translateY(0); }
+  40%           { transform: translateY(-8px); }
+  50%           { transform: translateY(-4px); }
+}
+
+.hero-buttons .btn--red,
+.cta-section .btn--gold {
+  animation: btnBounce 2.4s ease-in-out infinite;
+}
+
 /* ── Reduce motion: disable all animations ── */
 @media (prefers-reduced-motion: reduce) {
-  .hero-bg {
+  .hero-bg,
+  .hero-buttons .btn--red,
+  .cta-section .btn--gold {
     animation: none;
   }
 }

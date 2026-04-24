@@ -81,7 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  /* ── 5. Smooth Scroll for anchor links ── */
+  /* ── 5. Disable tel: links on desktop ── */
+  document.querySelectorAll('a[href^="tel"]').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      if (window.innerWidth >= 1024) e.preventDefault();
+    });
+  });
+
+  /* ── 6. Smooth Scroll for anchor links ── */
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener('click', (e) => {
       const target = document.querySelector(link.getAttribute('href'));
@@ -92,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ── 6. Chat Widget — show after 3-second delay ── */
+  /* ── 7. Chat Widget — show after 3-second delay ── */
   const chatWidget = document.getElementById('chat-widget');
   if (chatWidget) {
     setTimeout(() => chatWidget.classList.add('is-visible'), 3000);

@@ -1011,3 +1011,63 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 479px) {
   .chat-widget { bottom: 0; right: 0; width: 100%; max-width: 100%; }
 }
+
+/* ── MOBILE OPTIMIZATIONS ── */
+
+/* 1. Disable background-attachment: fixed on mobile/tablet
+      iOS Safari does not support it and causes blank sections or severe scroll jank.
+      The parallax effect is lost on all mobile platforms regardless. */
+@media (max-width: 1023px) {
+  .hero--about,
+  .hero--auto-rv,
+  .hero--boat,
+  .hero--classic-car,
+  .hero--motorcycle,
+  .hero--gallery,
+  .hero--contact,
+  .hero--city         { background-attachment: scroll; }
+  .why-choose-section { background-attachment: scroll; }
+
+  /* Sections using inline background-attachment: fixed (service + city pages) */
+  section[style*="background-attachment"] { background-attachment: scroll !important; }
+}
+
+/* 2. Reduce section vertical padding on mobile */
+@media (max-width: 767px) {
+  .section,
+  .cta-section,
+  .testimonials-section,
+  .carousel-section   { padding-block: var(--space-10); }
+  .footer-grid        { padding-block: var(--space-10); }
+}
+
+/* 3. Reduce hero min-height on mobile */
+@media (max-width: 767px) {
+  .hero        { min-height: 60vh; }
+  .hero--short { min-height: 45vh; }
+}
+
+/* 4. Make embedded iframes height-responsive */
+@media (max-width: 767px) {
+  .contact-embed iframe { min-height: 420px !important; }
+  .reviews-embed iframe  { min-height: 380px !important; }
+}
+@media (max-width: 479px) {
+  .contact-embed iframe          { min-height: 340px !important; }
+  .reviews-embed iframe           { min-height: 300px !important; }
+  iframe[src*="maps.google.com"] { height: 300px !important; }
+}
+
+/* 5. Increase carousel dot tap target (visual size unchanged) */
+@media (max-width: 1023px) {
+  .carousel-dot {
+    padding: 8px;
+    box-sizing: content-box;
+  }
+}
+
+/* 6. Force single-column service grids at narrow widths */
+@media (max-width: 639px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .service-list  { grid-template-columns: 1fr; }
+}

@@ -321,36 +321,52 @@ p:last-child { margin-bottom: 0; }
 .hero--classic-car,
 .hero--motorcycle,
 .hero--gallery,
-.hero--contact               { background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/aee7c2b2-a574-4e23-a4b1-32928356d9b5/0f7f7712-5ad1-4392-bbf8-7cf41634cb5a/1776951778312_american-flag-background.png'); background-color: #12161f; background-size: cover; background-position: center; background-attachment: fixed; overflow: visible; }
+.hero--contact,
+.hero--city                  { background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/aee7c2b2-a574-4e23-a4b1-32928356d9b5/0f7f7712-5ad1-4392-bbf8-7cf41634cb5a/1776951778312_american-flag-background.png'); background-color: #12161f; background-size: cover; background-position: center; background-attachment: fixed; overflow: visible; }
 .hero--about .hero-bg,
 .hero--auto-rv .hero-bg,
 .hero--boat .hero-bg,
 .hero--classic-car .hero-bg,
 .hero--motorcycle .hero-bg,
 .hero--gallery .hero-bg,
-.hero--contact .hero-bg      { display: none; }
+.hero--contact .hero-bg,
+.hero--city .hero-bg         { display: none; }
 .hero--about .hero-overlay,
 .hero--auto-rv .hero-overlay,
 .hero--boat .hero-overlay,
 .hero--classic-car .hero-overlay,
 .hero--motorcycle .hero-overlay,
 .hero--gallery .hero-overlay,
-.hero--contact .hero-overlay { display: none; }
+.hero--contact .hero-overlay,
+.hero--city .hero-overlay    { display: none; }
 .hero--about .hero-sub,
 .hero--auto-rv .hero-sub,
 .hero--boat .hero-sub,
 .hero--classic-car .hero-sub,
 .hero--motorcycle .hero-sub,
 .hero--gallery .hero-sub,
-.hero--contact .hero-sub     { max-width: 100%; margin-bottom: 0; color: var(--color-gold); }
+.hero--contact .hero-sub,
+.hero--city .hero-sub        { max-width: 100%; margin-bottom: 0; color: var(--color-gold); }
 .hero--about .hero-heading,
 .hero--auto-rv .hero-heading,
 .hero--boat .hero-heading,
 .hero--classic-car .hero-heading,
 .hero--motorcycle .hero-heading,
 .hero--gallery .hero-heading,
-.hero--contact .hero-heading { margin-bottom: 0; color: var(--color-red); text-shadow: 0 0 4px #000, 0 0 10px #000, 0 0 18px #000, 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000; }
+.hero--contact .hero-heading,
+.hero--city .hero-heading    { margin-bottom: 0; color: var(--color-red); text-shadow: 0 0 4px #000, 0 0 10px #000, 0 0 18px #000, 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000; }
 .hero--contact .hero-content { align-items: center; text-align: center; }
+
+/* ── CITY PAGE LAYOUT ── */
+.city-about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); align-items: stretch; }
+.city-about-grid img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md); display: block; }
+.city-about-box { background: rgba(0,0,0,0.72); border-radius: var(--radius-md); padding: var(--space-6) var(--space-8); display: flex; flex-direction: column; justify-content: center; color: var(--color-gold); }
+.city-about-box h2 { color: var(--color-gold); margin-bottom: var(--space-4); font-size: 1.4rem; }
+.city-about-box p { color: var(--color-gold); margin: 0; }
+@media (max-width: 767px) {
+  .city-about-grid { grid-template-columns: 1fr; }
+  .city-about-grid img { height: 280px; }
+}
 .about-text-backdrop         { background: rgba(0, 0, 0, 0.72); border-radius: var(--radius-md); padding: var(--space-6) var(--space-8); }
 .hero--auto-rv .hero-bg      { background: linear-gradient(135deg, #0f1218 0%, #1a2232 50%, #221a10 100%); }
 .hero--boat .hero-bg         { background: linear-gradient(135deg, #0a1520 0%, #0f2030 50%, #1a2838 100%); }

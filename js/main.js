@@ -1,6 +1,6 @@
 /* ============================================================
    A & E Auto Upholstery — Main JavaScript
-   Handles: footer year, mobile nav, Services dropdown, active nav
+   Handles: footer year, mobile nav, dropdowns, active nav
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,43 +32,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── 3. Services Dropdown ── */
-  const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-  const dropdownMenu   = document.getElementById('services-menu');
+  /* ── 3. Dropdown Menus (handles any number of .nav-dropdown elements) ── */
+  const closeAllDropdowns = () => {
+    document.querySelectorAll('.nav-dropdown-toggle').forEach((t) => {
+      t.setAttribute('aria-expanded', 'false');
+      t.parentElement.querySelector('.dropdown-menu')?.classList.remove('is-open');
+    });
+  };
 
-  if (dropdownToggle && dropdownMenu) {
-    dropdownToggle.addEventListener('click', (e) => {
+  document.querySelectorAll('.nav-dropdown').forEach((dropdown) => {
+    const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+    const menu   = dropdown.querySelector('.dropdown-menu');
+    if (!toggle || !menu) return;
+
+    toggle.addEventListener('click', (e) => {
       e.stopPropagation();
-      const isOpen = dropdownToggle.getAttribute('aria-expanded') === 'true';
-      dropdownToggle.setAttribute('aria-expanded', String(!isOpen));
-      dropdownMenu.classList.toggle('is-open', !isOpen);
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      // Close all other dropdowns first
+      document.querySelectorAll('.nav-dropdown-toggle').forEach((t) => {
+        if (t !== toggle) {
+          t.setAttribute('aria-expanded', 'false');
+          t.parentElement.querySelector('.dropdown-menu')?.classList.remove('is-open');
+        }
+      });
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      menu.classList.toggle('is-open', !isOpen);
     });
+  });
 
-    // Close on Escape
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        dropdownToggle.setAttribute('aria-expanded', 'false');
-        dropdownMenu.classList.remove('is-open');
-      }
-    });
-
-    // Close when clicking outside the dropdown
-    document.addEventListener('click', (e) => {
-      if (!dropdownToggle.parentElement.contains(e.target)) {
-        dropdownToggle.setAttribute('aria-expanded', 'false');
-        dropdownMenu.classList.remove('is-open');
-      }
-    });
-  }
+  // Close all dropdowns on Escape or outside click
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAllDropdowns();
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown')) closeAllDropdowns();
+  });
 
   /* ── 4. Active Nav Indicator ── */
   const page = document.body.getAttribute('data-page');
   if (page) {
-    // Highlight exact page link
     const activeLink = document.querySelector(`[data-nav="${page}"]`);
     if (activeLink) activeLink.classList.add('is-active');
 
-    // Highlight "Services" parent for all service sub-pages
     const servicePages = ['auto-rv', 'boat', 'classic-car', 'motorcycle'];
     if (servicePages.includes(page)) {
       const servicesToggle = document.querySelector('[data-nav="services"]');

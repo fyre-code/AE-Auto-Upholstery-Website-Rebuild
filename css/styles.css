@@ -159,6 +159,7 @@ p:last-child { margin-bottom: 0; }
 
 /* ── HEADER ── */
 .site-header {
+  position: relative;
   background-color: var(--color-dark);
   background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/aee7c2b2-a574-4e23-a4b1-32928356d9b5/0f7f7712-5ad1-4392-bbf8-7cf41634cb5a/1776951781283_upholstery-pattern-background.png');
   background-repeat: repeat;
@@ -975,9 +976,8 @@ p:last-child { margin-bottom: 0; }
   .dropdown-link { padding: var(--space-3) 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
 }
 
-/* Desktop: header is relative to stacking context */
+/* Desktop: hide hamburger */
 @media (min-width: 1024px) {
-  .site-header { position: relative; }
   .hamburger-btn { display: none; }
 }
 

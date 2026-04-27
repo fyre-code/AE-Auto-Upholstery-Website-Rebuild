@@ -357,6 +357,10 @@ p:last-child { margin-bottom: 0; }
 .hero--contact .hero-heading,
 .hero--city .hero-heading    { margin-bottom: 0; color: var(--color-red); text-shadow: 0 0 4px #000, 0 0 10px #000, 0 0 18px #000, 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000; }
 .hero--contact .hero-content { align-items: center; text-align: center; }
+.hero--about .hero-buttons,
+.hero--gallery .hero-buttons,
+.hero--contact .hero-buttons,
+.hero--city .hero-buttons    { margin-top: var(--space-6); }
 
 /* ── CITY PAGE LAYOUT ── */
 .city-about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); align-items: stretch; }

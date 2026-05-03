@@ -994,28 +994,6 @@ p:last-child { margin-bottom: 0; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
 
-/* ── Chat Widget ── */
-.chat-widget {
-  position: fixed;
-  bottom: var(--space-6);
-  right: var(--space-6);
-  width: 380px;
-  max-width: calc(100vw - var(--space-8));
-  z-index: 9999;
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  pointer-events: none;
-}
-.chat-widget.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-@media (max-width: 479px) {
-  .chat-widget { bottom: 0; right: 0; width: 100%; max-width: 100%; }
-}
-
 /* ── MOBILE OPTIMIZATIONS ── */
 
 /* 1. Disable background-attachment: fixed on mobile/tablet
